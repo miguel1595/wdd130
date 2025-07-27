@@ -96,7 +96,7 @@ footer {
 
 /* Práctica opcional W04: Mejoras en el diseño de la página de inicio */
 
-header,.grid, footer {
+header, .grid, footer {
   max-width: 840px;
   margin: 0 auto;
 }
