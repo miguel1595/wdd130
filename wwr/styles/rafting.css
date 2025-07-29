@@ -135,6 +135,8 @@ header img {
 .adventures {
   text-align: center;
   padding: 2rem;
+  background-color: #f7f7f7;
+  margin: 2rem auto;
 }
 
 .gallery {
@@ -164,7 +166,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #d3c2f2;
+  background-color: #E0A458;
   padding: 1rem 2rem;
 }
 
@@ -175,7 +177,8 @@ footer {
 
 .socialmedia img {
   width: 24px;
-  height: 24px;
+  height: auto;
+  
 }
 
 
@@ -191,11 +194,6 @@ article {
   text-decoration: none;
 }
 
-.socialmedia img {
-  width: 40px;
-  height: auto;
-  margin: 8px;
-}
 
 
 
