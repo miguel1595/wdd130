@@ -1,18 +1,19 @@
 :root {
-  --primary-color: #2274A5; /* UCLA Blue */
-  --secondary-color:#E0A458 ; /* Earth yellow */
-  --accent1-color: #E0FBFC; /* Ligth cyan */
-  --accent2-color: #2D2D2A; /* Jet */
+  --primary-color: #2274A5;
+  /* UCLA Blue */
+  --secondary-color: #E0A458;
+  /* Earth yellow */
+  --accent1-color: #E0FBFC;
+  /* Ligth cyan */
+  --accent2-color: #2D2D2A;
+  /* Jet */
   --heading-font: "Bebas Neue", sans-serif;
   --body-font: "Open Sans", sans-serif;
 }
 
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent1-color);
-  }
-  
+/* REGLA UNIVERSAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,57 +21,195 @@ header {
 }
 
 
+
+/* COLOR Y FUENTE DE TEXTO DEL BODY */
 body {
   font-family: var(--body-font);
   color: var(--accent2-color);
 }
 
-header, main, footer {
+/* ANCHO DE TODAS LAS PARTES */
+
+header,
+main,
+footer {
   width: 900px;
   margin: 0 auto;
 }
 
-h1, h2 {
+/* COLOR Y FUENTE DE TITULOS */
+h1,
+h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-nav, p, section, article {
+
+
+
+/* HEADER */
+header {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* tres columnas: logo, título, nav */
+  align-items: center;
+    /* centrado vertical */
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+
+}
+
+
+header img {
+  height: 150px;
+}
+
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  font-family: "Arial"
+}
+
+.navigation a {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #E0FBFC;
+}
+
+.navigation li {
+  flex: 1 1 auto;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+  position: relative;
+  text-align: center;
+  
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* HISTORY SECTION */
+.history {
+  padding: 2rem;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.history {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 1rem;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.history-content img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+}
+
+/* ADVENTURES SECTION */
+.adventures {
+  text-align: center;
+  padding: 2rem;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.gallery figure {
+  width: calc(20% - 1rem);
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.gallery figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d3c2f2;
+  padding: 1rem 2rem;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialmedia img {
+  width: 24px;
+  height: 24px;
+}
+
+
+nav,
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
 
 .socialmedia a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .socialmedia img {
   width: 40px;
-  height: auto; 
-  margin: 8px; 
+  height: auto;
+  margin: 8px;
 }
+
+
 
 /*Dale estilo al Hero Div con superposiciones*/
 
-.hero {
-  position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
 h1 {
   position: absolute;
-  top: 20px;
+  top: 40px;
   width: 100%;
   padding: 16px;
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #2D2D2A; 
+  color: #2D2D2A;
 }
 
 article {
@@ -81,7 +220,7 @@ article {
   text-align: center;
   opacity: 0.9;
   background-color: var(--accent2-color);
-  color: #E0FBFC; 
+  color: #E0FBFC;
 }
 
 
