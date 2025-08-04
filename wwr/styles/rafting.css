@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #2274A5;
+  --primary-color: #004c80 ;
   /* UCLA Blue */
   --secondary-color: #E0A458;
   /* Earth yellow */
-  --accent1-color: #E0FBFC;
+  --accent1-color: #fff;
   /* Ligth cyan */
-  --accent2-color: #2D2D2A;
+  --accent2-color: #000000;
   /* Jet */
   --heading-font: "Bebas Neue", sans-serif;
   --body-font: "Open Sans", sans-serif;
@@ -79,7 +79,7 @@ header img {
   display: block;
   text-decoration: none;
   font-weight: bold;
-  color: #E0FBFC;
+  color: #fff;
 }
 
 .navigation li {
@@ -106,7 +106,7 @@ header img {
 /* HISTORY SECTION */
 .history {
   padding: 2rem;
-  background-color: #f7f7f7;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -135,7 +135,7 @@ header img {
 .adventures {
   text-align: center;
   padding: 2rem;
-  background-color: #f7f7f7;
+  background-color: #fff;
   margin: 2rem auto;
 }
 
@@ -195,8 +195,6 @@ article {
 }
 
 
-
-
 /*Dale estilo al Hero Div con superposiciones*/
 
 h1 {
@@ -207,7 +205,7 @@ h1 {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #2D2D2A;
+  color: #000000;
 }
 
 article {
@@ -218,7 +216,7 @@ article {
   text-align: center;
   opacity: 0.9;
   background-color: var(--accent2-color);
-  color: #E0FBFC;
+  color: #fff;
 }
 
 
@@ -226,3 +224,223 @@ article {
   float: right;
   width: 200px;
 }
+
+
+
+/* CONFIGURACIÓN DE PAGINA DE CONTACT USSSSSSSSSSSSSSSSSSSSSSSSS */
+
+.contact-form, .contact-details, .team {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.contact-form form {
+  background: #e3e3ea;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(31, 35, 80, 0.08);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Fieldsets estilo cuadro con borde y leyenda */
+.contact-form fieldset {
+  border: 1px solid #bfc0cc;
+  padding: 1rem 1.25rem 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  background: #fff;
+}
+
+.contact-form legend {
+  padding: 0 8px;
+  font-weight: bold;
+  color: #1f2350;
+  font-size: 1.1rem;
+}
+
+/* Grupos de formulario */
+.contact-form .form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .form-group label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #bfc0cc;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  outline: none;
+  border-color: #004c80 ;
+  box-shadow: 0 0 0 3px rgba(47, 79, 208, 0.2);
+}
+
+/* Opciones de propósito (radio) */
+.contact-form .purpose-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-form .purpose-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+/* Checkbox */
+.contact-form input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+/* Botón */
+.contact-form .btn-submit {
+  background: #004c80 ;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.contact-form .btn-submit:hover,
+.contact-form .btn-submit:focus {
+  background: #004c80 ;
+}
+
+.contact-form .btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Centrar el botón */
+.contact-form .form-group:last-of-type {
+  text-align: center;
+}
+
+/* ===== Equipo: imágenes mismas dimensiones ===== */
+.team-gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  flex: 1 1 200px;
+  background: #e3e3ea;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(31, 35, 80, 0.05);
+}
+
+.team-member img {
+  width: 100%;
+  height: 310px; /* fija altura para uniformidad */
+  object-fit: cover; /* recorta proporcionalmente */
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.team-member figcaption {
+  font-size: 0.9rem;
+}
+
+/* ===== Encabezados estilo subrayado (si no los tienes ya) ===== */
+.contact-form h2,
+.team h2,
+.contact-details h2 {
+  position: relative;
+  padding-bottom: 6px;
+  margin-top: 0;
+  color:  #004c80 ;
+}
+
+.contact-form h2::after,
+.team h2::after,
+.contact-details h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background:  #004c80 ;
+  margin-top: 4px;
+  border-radius: 2px;
+}
+
+/* ===== Responsive ligero ===== */
+@media (max-width: 800px) {
+  .contact-form, .team, .contact-details {
+    padding: 0.5rem;
+  }
+  .team-gallery {
+    flex-direction: column;
+  }
+  .contact-form .purpose-options {
+    flex-direction: column;
+  }
+}
+
+
+/* === Sobrescribe el h1 global solo dentro de Contact Us === */
+.contact-hero h1 {
+  position: static !important; /* quita el absolute global */
+  top: auto;
+  width: auto;
+  background: none;
+  opacity: 1;
+  margin: 0 0 0.5rem;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color:  #004c80 ;
+  display: inline-block;
+  border-bottom: 4px solid  #004c80 ;
+  padding-bottom: 6px;
+}
+.contact-hero p {
+  margin-top: 0.5rem;
+}
+
+
+footer a,
+footer a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #222;
+  text-decoration: underline;
+}
+
+
+
