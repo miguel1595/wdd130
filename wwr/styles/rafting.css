@@ -408,6 +408,16 @@ article {
 }
 
 
+/* ===== style map ===== */
+.map {
+    width: 600px;
+    height: 300px;
+    border: 0;
+}
+
+
+
+
 /* === Sobrescribe el h1 global solo dentro de Contact Us === */
 .contact-hero h1 {
   position: static !important; /* quita el absolute global */
@@ -441,6 +451,8 @@ footer a:focus {
   color: #222;
   text-decoration: underline;
 }
+
+
 
 
 
