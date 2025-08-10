@@ -456,3 +456,270 @@ footer a:focus {
 
 
 
+
+/* ===== Estilos para la página de inicio ===== */
+
+/* Grid principal (propósito y ofertas) */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.home-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.home-grid h3 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+}
+
+.home-grid p {
+  line-height: 1.4;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+.cta h2 {
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+}
+
+.cta p {
+  margin: 0.5rem 0 1rem;
+}
+
+/* Newsletter */
+.newsletter {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #e3e3ea;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(31, 35, 80, 0.08);
+}
+
+.newsletter h2 {
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+  margin-bottom: 0.5rem;
+}
+
+.newsletter p {
+  margin-bottom: 1.5rem;
+}
+
+.newsletter .form-group {
+  margin-bottom: 1rem;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #bfc0cc;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.newsletter input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 76, 128, 0.2);
+}
+
+.newsletter .btn-submit {
+  margin-top: 0.5rem;
+}
+
+
+
+
+/* ==== Trips Page Styles ==== */
+
+/* 1️⃣ Llamada a la acción */
+.trips-cta {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+.trips-cta h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.trips-cta a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.trips-cta a:hover {
+    background-color: #023e8a;
+}
+
+/* 2️⃣ Lista de viajes con fotos */
+.trips-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.trip {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+}
+.trip img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.trip h2 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: #0077b6;
+}
+.trip p {
+    margin: 0 1rem 1rem;
+    text-align: justify;
+}
+
+/* 3️⃣ Tabla resumen de viajes */
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+.trips-table th,
+.trips-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+}
+.trips-table th {
+    background-color: #0077b6;
+    color: white;
+}
+.trips-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* 4️⃣ Enlace al wireframe en el footer */
+.footer-wireframe {
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.footer-wireframe a {
+    color: #0077b6;
+    text-decoration: underline;
+}
+.footer-wireframe a:hover {
+    color: #023e8a;
+}
+
+
+
+
+
+
+
+.hero-trips {
+    position: relative;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-size: 3rem; /* o el tamaño que uses en otras páginas */
+    color: white; /* igual que tus otros títulos */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* para que se lea sobre la imagen */
+    margin: 0;
+}
+
+/* Quitar fondo blanco del main */
+main {
+    background-color: transparent;
+}
+
+
+
+
+
+.trip-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.trip-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-card h2 {
+    margin: 1rem 0 0.5rem;
+}
+
+.trip-card p {
+    padding: 0 1rem;
+}
+
+
+/* Green Button trips */
+.btn-submit {
+    background-color: #28a745; /* Verde */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el mouse */
+}
