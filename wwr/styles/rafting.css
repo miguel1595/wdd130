@@ -711,7 +711,7 @@ main {
 
 /* Green Button trips */
 .btn-submit {
-    background-color: #28a745; /* Verde */
+    background-color: #2d572c; /* Verde */
     color: white;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
@@ -721,5 +721,5 @@ main {
 }
 
 .btn-submit:hover {
-    background-color: #218838; /* Verde más oscuro al pasar el mouse */
+    background-color: #2d572c; /* Verde más oscuro al pasar el mouse */
 }
