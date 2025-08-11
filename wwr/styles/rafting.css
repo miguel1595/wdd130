@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #004c80 ;
+  --primary-color: #004c80;
   /* UCLA Blue */
   --secondary-color: #E0A458;
   /* Earth yellow */
@@ -54,7 +54,7 @@ header {
   grid-template-columns: 1fr 2fr;
   /* tres columnas: logo, título, nav */
   align-items: center;
-    /* centrado vertical */
+  /* centrado vertical */
   padding: 1rem;
   background-color: var(--primary-color);
   color: var(--accent1-color);
@@ -92,7 +92,7 @@ header img {
 .hero {
   position: relative;
   text-align: center;
-  
+
 }
 
 .hero img {
@@ -106,7 +106,7 @@ header img {
 /* HISTORY SECTION */
 .history {
   padding: 2rem;
-  background-color: #fff;
+  background-color: #bfc0cc;
   text-align: center;
 }
 
@@ -178,7 +178,7 @@ footer {
 .socialmedia img {
   width: 24px;
   height: auto;
-  
+
 }
 
 
@@ -229,7 +229,9 @@ article {
 
 /* CONFIGURACIÓN DE PAGINA DE CONTACT USSSSSSSSSSSSSSSSSSSSSSSSS */
 
-.contact-form, .contact-details, .team {
+.contact-form,
+.contact-details,
+.team {
   max-width: 900px;
   margin: 2rem auto;
   padding: 1rem;
@@ -290,7 +292,7 @@ article {
 .contact-form textarea:focus,
 .contact-form select:focus {
   outline: none;
-  border-color: #004c80 ;
+  border-color: #004c80;
   box-shadow: 0 0 0 3px rgba(47, 79, 208, 0.2);
 }
 
@@ -315,7 +317,7 @@ article {
 
 /* Botón */
 .contact-form .btn-submit {
-  background: #004c80 ;
+  background: #004c80;
   color: #fff;
   border: none;
   padding: 14px 32px;
@@ -330,7 +332,7 @@ article {
 
 .contact-form .btn-submit:hover,
 .contact-form .btn-submit:focus {
-  background: #004c80 ;
+  background: #004c80;
 }
 
 .contact-form .btn-submit:disabled {
@@ -361,8 +363,10 @@ article {
 
 .team-member img {
   width: 100%;
-  height: 310px; /* fija altura para uniformidad */
-  object-fit: cover; /* recorta proporcionalmente */
+  height: 310px;
+  /* fija altura para uniformidad */
+  object-fit: cover;
+  /* recorta proporcionalmente */
   border-radius: 6px;
   display: block;
   margin-bottom: 8px;
@@ -379,7 +383,7 @@ article {
   position: relative;
   padding-bottom: 6px;
   margin-top: 0;
-  color:  #004c80 ;
+  color: #004c80;
 }
 
 .contact-form h2::after,
@@ -389,19 +393,24 @@ article {
   display: block;
   width: 60px;
   height: 3px;
-  background:  #004c80 ;
+  background: #004c80;
   margin-top: 4px;
   border-radius: 2px;
 }
 
 /* ===== Responsive ligero ===== */
 @media (max-width: 800px) {
-  .contact-form, .team, .contact-details {
+
+  .contact-form,
+  .team,
+  .contact-details {
     padding: 0.5rem;
   }
+
   .team-gallery {
     flex-direction: column;
   }
+
   .contact-form .purpose-options {
     flex-direction: column;
   }
@@ -410,9 +419,9 @@ article {
 
 /* ===== style map ===== */
 .map {
-    width: 600px;
-    height: 300px;
-    border: 0;
+  width: 600px;
+  height: 300px;
+  border: 0;
 }
 
 
@@ -420,7 +429,8 @@ article {
 
 /* === Sobrescribe el h1 global solo dentro de Contact Us === */
 .contact-hero h1 {
-  position: static !important; /* quita el absolute global */
+  position: static !important;
+  /* quita el absolute global */
   top: auto;
   width: auto;
   background: none;
@@ -430,11 +440,12 @@ article {
   text-transform: uppercase;
   font-size: 2.5rem;
   letter-spacing: 1px;
-  color:  #004c80 ;
+  color: #004c80;
   display: inline-block;
-  border-bottom: 4px solid  #004c80 ;
+  border-bottom: 4px solid #004c80;
   padding-bottom: 6px;
 }
+
 .contact-hero p {
   margin-top: 0.5rem;
 }
@@ -467,6 +478,7 @@ footer a:focus {
   padding: 1rem;
   max-width: 900px;
   margin: 2rem auto;
+  background-color: #bfc0cc;
 }
 
 .home-grid img {
@@ -484,20 +496,44 @@ footer a:focus {
   line-height: 1.4;
 }
 
+.home-grid div {
+  background: #fff; /* Fondo del bloque */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 76, 128, 0.3); /* Delineado difuminado */
+  padding: 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.home-grid div:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0 0 18px rgba(0, 76, 128, 0.45); /* Difuminado más fuerte al pasar el mouse */
+}
+
+.home-grid img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
 /* CTA */
 .cta {
-  text-align: center;
-  margin: 2rem auto;
-  max-width: 700px;
+  background-color: #e3e3ea;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 76, 128, 0.15);
 }
 
 .cta h2 {
   color: var(--primary-color);
-  font-family: var(--heading-font);
 }
 
 .cta p {
-  margin: 0.5rem 0 1rem;
+  color: #333;
 }
 
 /* Newsletter */
@@ -553,89 +589,101 @@ footer a:focus {
 
 /* 1️⃣ Llamada a la acción */
 .trips-cta {
-    background-color: #f5f5f5;
-    text-align: center;
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
 }
+
 .trips-cta h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
+
 .trips-cta a {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #0077b6;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
+
 .trips-cta a:hover {
-    background-color: #023e8a;
+  background-color: #023e8a;
 }
 
 /* 2️⃣ Lista de viajes con fotos */
 .trips-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
 }
+
 .trip {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
 }
+
 .trip img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
+
 .trip h2 {
-    margin: 1rem;
-    font-size: 1.5rem;
-    color: #0077b6;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: #0077b6;
 }
+
 .trip p {
-    margin: 0 1rem 1rem;
-    text-align: justify;
+  margin: 0 1rem 1rem;
+  text-align: justify;
 }
 
 /* 3️⃣ Tabla resumen de viajes */
 .trips-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 2rem 0;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
 }
+
 .trips-table th,
 .trips-table td {
-    border: 1px solid #ccc;
-    padding: 0.75rem;
-    text-align: left;
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
 }
+
 .trips-table th {
-    background-color: #0077b6;
-    color: white;
+  background-color: #0077b6;
+  color: white;
 }
+
 .trips-table tr:nth-child(even) {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 /* 4️⃣ Enlace al wireframe en el footer */
 .footer-wireframe {
-    margin-top: 1rem;
-    display: block;
-    text-align: center;
-    font-size: 0.9rem;
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
 }
+
 .footer-wireframe a {
-    color: #0077b6;
-    text-decoration: underline;
+  color: #0077b6;
+  text-decoration: underline;
 }
+
 .footer-wireframe a:hover {
-    color: #023e8a;
+  color: #023e8a;
 }
 
 
@@ -645,33 +693,36 @@ footer a:focus {
 
 
 .hero-trips {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .hero-img {
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
 }
 
 .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero-text h1 {
-    font-size: 3rem; /* o el tamaño que uses en otras páginas */
-    color: white; /* igual que tus otros títulos */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* para que se lea sobre la imagen */
-    margin: 0;
+  font-size: 3rem;
+  /* o el tamaño que uses en otras páginas */
+  color: white;
+  /* igual que tus otros títulos */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* para que se lea sobre la imagen */
+  margin: 0;
 }
 
 /* Quitar fondo blanco del main */
 main {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 
@@ -679,47 +730,50 @@ main {
 
 
 .trip-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color:#bfc0cc
 }
 
 .trip-card {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
-    padding-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
 .trip-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .trip-card h2 {
-    margin: 1rem 0 0.5rem;
+  margin: 1rem 0 0.5rem;
 }
 
 .trip-card p {
-    padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 
 /* Green Button trips */
 .btn-submit {
-    background-color: #2d572c; /* Verde */
-    color: white;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+  background-color: #2d572c;
+  /* Verde */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .btn-submit:hover {
-    background-color: #2d572c; /* Verde más oscuro al pasar el mouse */
+  background-color: #2d572c;
+  /* Verde más oscuro al pasar el mouse */
 }
